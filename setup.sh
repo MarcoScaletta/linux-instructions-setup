@@ -14,4 +14,4 @@ echo "export KEY4CATs=$(pwd)/cats/build/libs/KeY4CATs.jar" > ~/.bash_profile
 echo "source ~/.key4cats_command.sh" >> ~/.bash_profile
 source ~/.bash_profile
 echo $KEY4CATs
-/gradlew :cats:shadowjar
+./gradlew :cats:shadowjar
