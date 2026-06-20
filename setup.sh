@@ -14,6 +14,8 @@ cd key4cats/
 echo "KEY4CATs=$(pwd)/cats/build/libs/KeY4CATs.jar" >> ~/.bashrc
 echo "source ~/.key4cats_command.sh" >> ~./bashrc
 
+cp .key4cats_command.sh ~/.key4cats_command.sh
+
 source ~/.bashrc
 echo $KEY4CATs
 
