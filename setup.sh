@@ -8,7 +8,7 @@ sudo apt-get autoremove -y
 echo ''
 echo 'INSTALLING DEPENDENCIES...'
 echo < dependencies
-sudo  apt-get install < dependencies
+sudo  xargs apt-get -y install < dependencies
 echo ''
 echo 'ADDING key4cats command to ~/ folder'
 cp .key4cats_command.sh ~/.key4cats_command.sh
