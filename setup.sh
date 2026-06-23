@@ -7,7 +7,7 @@ sudo apt-get upgrade -y
 sudo apt-get autoremove -y
 echo ''
 echo 'INSTALLING DEPENDENCIES...'
-echo < dependencies
+xargs echo < dependencies
 sudo  xargs apt-get -y install < dependencies
 echo ''
 echo 'ADDING key4cats command to ~/ folder'
@@ -22,10 +22,9 @@ echo 'get in key4cats folder'
 cd key4cats/
 echo ''
 echo 'exporting KEY4CATs env var and command for key4cats to \"~/.key4cats_setting_bash\"'
-echo "\n" >> ~/.key4cats_setting_bash
+echo '' >> ~/.key4cats_setting_bash
 echo "export KEY4CATs=$(pwd)/cats/build/libs/KeY4CATs.jar" >> ~/.key4cats_setting_bash
 echo "source ~/.key4cats_setting_bash" >> ~/.bashrc
-source source ~/.key4cats_setting_bash
 source ~/.bashrc
 echo "KEY4CATs=$KEY4CATs"
 echo ""
