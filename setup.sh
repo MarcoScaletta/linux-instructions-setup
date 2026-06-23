@@ -11,7 +11,7 @@ echo < dependencies
 sudo  xargs apt-get -y install < dependencies
 echo ''
 echo 'ADDING key4cats command to ~/ folder'
-cp .key4cats_command.sh ~/.key4cats_command.sh
+cp .key4cats_setting_bash ~/.key4cats_setting_bash
 echo ''
 echo 'cd to ./.. to download key4cats from github repo'
 cd ..
@@ -21,10 +21,10 @@ echo ''
 echo 'get in key4cats folder'
 cd key4cats/
 echo ''
-echo 'exporting KEY4CATs env var and command for key4cats to ~/.bash_profile'
-echo "export KEY4CATs=$(pwd)/cats/build/libs/KeY4CATs.jar" > ~/.bash_profile
-echo "source ~/.key4cats_command.sh" >> ~/.bash_profile
-source ~/.bash_profile
+echo 'exporting KEY4CATs env var and command for key4cats to \"~/.key4cats_setting_bash\"'
+echo "export KEY4CATs=$(pwd)/cats/build/libs/KeY4CATs.jar" >> ~/.key4cats_setting_bash
+echo "source ~/.key4cats_setting_bash" >> ~/.bashrc
+source ~/.bashrc
 echo "KEY4CATs=$KEY4CATs"
 echo ""
 echo "build jar"
