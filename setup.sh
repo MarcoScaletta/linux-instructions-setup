@@ -32,6 +32,6 @@ echo "build jar"
 echo "cd sanity-check"
 cd sanity-checks 
 echo "START SANITY CHECKS"
-source 1-check-evn-var.sh
+source 1-check-env-var.sh
 source 2-check-command.sh
 source 3-check-run-example.sh
